@@ -6,21 +6,23 @@
 <!-- SCRHEIGHT: 250 -->
 <script type="text/javascript" src="//media.adrcdn.com/scripts/screenad_interface_1.0.3_scrambled.js"></script>
 <script>
-var settings = {
-    width : 300,
-    height : 250,
-    reference : 'video', // This reference is used for event names. Only alphanumerical characters and underscores are allowed. Defaults to 'video'.
-    prependTo : document.getElementById('video_container'), // alternatively, use appendTo
-    controls : true,
-    loop : true, // defaults to false
-    autoplay : true, // defaults to false (only works on desktop)
-    muted : true, // it's recommended to omit this parameter *
-    videoFiles : [
-       {'src':'http://lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_2.webm','type':'video/webm'},
-       {'src':'http://www.lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_1.mp4','type':'video/mp4'}
-    ]
-};
+
 document.addEventListener('DOMContentLoaded', function(){
+    var settings = {
+        width : 300,
+        height : 250,
+        reference : 'video', // This reference is used for event names. Only alphanumerical characters and underscores are allowed. Defaults to 'video'.
+        prependTo : document.getElementById('video_container'), // alternatively, use appendTo
+        controls : true,
+        loop : true, // defaults to false
+        autoplay : true, // defaults to false (only works on desktop)
+        muted : true, // it's recommended to omit this parameter *
+        videoFiles : [
+           {'src':'http://lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_2.webm','type':'video/webm'},
+           {'src':'http://www.lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_1.mp4','type':'video/mp4'}
+        ]
+    };
+    
     var myVideo = new screenad.video.VideoPlayer (settings);
     // * In most cases it is best to leave the 'muted' parameter out. It automatically decides
     //   what's best, based on the value of autoplay:
