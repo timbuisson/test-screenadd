@@ -12,13 +12,12 @@ var settings = {
     reference : 'video', // This reference is used for event names. Only alphanumerical characters and underscores are allowed. Defaults to 'video'.
     prependTo : document.getElementById('video_container'), // alternatively, use appendTo
     controls : true,
-    poster : 'video_poster_600x338.jpg',
     loop : true, // defaults to false
     autoplay : true, // defaults to false (only works on desktop)
     muted : true, // it's recommended to omit this parameter *
     videoFiles : [
-       {'src':'BigBuckBunny_640x360.webm','type':'video/webm'}
-       ,{'src':'BigBuckBunny_640x360.mp4','type':'video/mp4'}
+       {'src':'http://lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_2.webm','type':'video/webm'},
+       {'src':'http://www.lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_1.mp4','type':'video/mp4'}
     ]
 };
 document.addEventListener('DOMContentLoaded', function(){
