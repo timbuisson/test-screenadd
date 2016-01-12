@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function(){
         height : 250,
         reference : 'video', // This reference is used for event names. Only alphanumerical characters and underscores are allowed. Defaults to 'video'.
         prependTo : document.getElementById('video_container'), // alternatively, use appendTo
-        controls : true,
-        loop : true, // defaults to false
+        controls : false,
+        loop : false, // defaults to false
         autoplay : true, // defaults to false (only works on desktop)
-        muted : true, // it's recommended to omit this parameter *
+        muted : false, // it's recommended to omit this parameter *
         videoFiles : [
            {'src':'http://lapureprod.com/DAVIDOUNET/SESAME_PREROLL.webm','type':'video/webm'},
            {'src':'http://lapureprod.com//DAVIDOUNET/SESAME_PREROLL.mp4','type':'video/mp4'}
