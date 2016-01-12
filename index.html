@@ -20,17 +20,14 @@ document.addEventListener('DOMContentLoaded', function(){
         videoFiles : [
            {'src':'http://lapureprod.com/DAVIDOUNET/SESAME_PREROLL.webm','type':'video/webm'},
            {'src':'http://lapureprod.com//DAVIDOUNET/SESAME_PREROLL.mp4','type':'video/mp4'}
-        ],
-        onClickOut: function(){
-            window.location = 'http://concours-sesame.net';
-        }
+        ]
     };
     
     var myVideo = new screenad.video.VideoPlayer (settings);
-    // * In most cases it is best to leave the 'muted' parameter out. It automatically decides
-    //   what's best, based on the value of autoplay:
-    //    - autoplay === true results in a muted video.
-    //    - autoplay === false results in a non-muted video.
+    myVideo.getVideoElement().addEventListener('click', function(){
+        console.log('yo');
+        window.location = 'http://concours-sesame.net';
+    })
 })
 
 </script>
