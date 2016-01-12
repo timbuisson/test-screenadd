@@ -18,9 +18,12 @@ document.addEventListener('DOMContentLoaded', function(){
         autoplay : true, // defaults to false (only works on desktop)
         muted : true, // it's recommended to omit this parameter *
         videoFiles : [
-           {'src':'http://lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_2.webm','type':'video/webm'},
-           {'src':'http://www.lapureprod.com/DAVIDOUNET/SHOWREEL_LPP_2015_1.mp4','type':'video/mp4'}
-        ]
+           {'src':'http://lapureprod.com/DAVIDOUNET/SESAME_PREROLL.webm','type':'video/webm'},
+           {'src':'http://lapureprod.com//DAVIDOUNET/SESAME_PREROLL.mp4','type':'video/mp4'}
+        ],
+        onClickOut: function(){
+            window.location = 'http://concours-sesame.net';
+        }
     };
     
     var myVideo = new screenad.video.VideoPlayer (settings);
