@@ -24,7 +24,9 @@ document.addEventListener('DOMContentLoaded', function(){
     };
     
     var myVideo = new screenad.video.VideoPlayer (settings);
-    myVideo.getVideoElement().addEventListener('click', function(){
+    var videoEl = myVideo.getVideoElement()
+    console.log('el', videoEl);
+    videoEl.addEventListener('click', function(){
         console.log('yo');
         window.location = 'http://concours-sesame.net';
     })
